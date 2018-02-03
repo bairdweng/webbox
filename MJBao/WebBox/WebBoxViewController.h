@@ -20,10 +20,11 @@ typedef void (^CallBackDataBlock)(NSString* name, id data);
 @property (nonatomic, assign) BOOL hiddenNavigationBar; //隐藏导航栏。
 @property (nonatomic, assign) BOOL interactivePopDisabled;//禁止手势。
 @property (nonatomic, assign) BOOL hiddenStateBar; //隐藏状态栏。
-@property (nonatomic, assign) BOOL showDocumentTitel; //显示网页标题。
+@property (nonatomic, assign) BOOL showDocumentTitle; //显示网页标题。
 @property (nonatomic, assign) BOOL dissScrollViewbounces; //禁止跳动。
 @property (nonatomic, assign) BOOL dissShowProgressView; //禁止显示进度条。
 @property (nonatomic, assign) BOOL showRefresh; //显示右边刷新按钮。
+@property(assign)BOOL *fuck;
 /**
  加载链接
  @param URL URL

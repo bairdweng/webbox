@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface JSMiddleFunction : NSObject
-+ (void)initWithTarget:(id)target withParams:(NSDictionary*)params;
++ (void)initWithTarget:(NSString*)className withParams:(NSDictionary*)params;
+
++ (void)initWithTarget:(NSString*)className withTarget:(id)target withParams:(NSDictionary*)params;
 @end

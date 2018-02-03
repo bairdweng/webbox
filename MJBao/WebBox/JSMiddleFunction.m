@@ -9,37 +9,34 @@
 #import "JSMiddleFunction.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
-#import <UIKit/UIKit.h>
-#import "WebBoxViewController.h"
 @implementation JSMiddleFunction
-+ (void)initWithTarget:(id)target withParams:(NSDictionary*)params
++ (void)initWithTarget:(NSString*)className withParams:(NSDictionary*)params
 {
-    [JSMiddleFunction currentObject:[target class] withIndex:0 withAllKeys:@[ @"view", @"backgroundColor" ]];
-    NSLog(@"params===%@",params);
+//    [JSMiddleFunction currentObject:target withIndex:0 withAllKeys:@[ @"view", @"backgroundColor" ]];
+NSLog(@"params===%@", [self getclass_copyIvarList:@"WebBoxViewController"]);
 
-    return;
-    id vc = target;
-    for(NSString *key in params.allKeys){
-        id setObject = nil;
-        NSString *value = params[key];
-        NSArray* keys = [key componentsSeparatedByString:@"."];
-        
-        if (keys && keys.count > 0) {
-
-            NSLog(@"=============%@", [JSMiddleFunction currentObject:target withIndex:0 withAllKeys:keys]);
-            [self getclass_copyIvarList:@""];
-
-            //            for (int i = 0; i<keys.count; i++) {
-            //                id obj1 = [vc objectForKey:keys[i]];
-            //                id lastvc = obj1;
-            //            }
-        }
-        else{
-        }
-        NSArray* values = [value componentsSeparatedByString:@"."];
-        for (NSString* value in values) {
-        }
-    }
+return;
+//id vc = target;
+//for (NSString* key in params.allKeys) {
+//    id setObject = nil;
+//    NSString* value = params[key];
+//    NSArray* keys = [key componentsSeparatedByString:@"."];
+//
+//    if (keys && keys.count > 0) {
+//
+//        NSLog(@"=============%@", [JSMiddleFunction currentObject:target withIndex:0 withAllKeys:keys]);
+//        [self getclass_copyIvarList:@""];
+//
+//        //            for (int i = 0; i<keys.count; i++) {
+//        //                id obj1 = [vc objectForKey:keys[i]];
+//        //                id lastvc = obj1;
+//        //            }
+//    } else {
+//    }
+//    NSArray* values = [value componentsSeparatedByString:@"."];
+//    for (NSString* value in values) {
+//    }
+//    }
     
 //    NSArray *webatt= [self getclass_copyIvarList:@"WebBoxViewController"];
 //    for (NSDictionary *dic in webatt) {
@@ -57,14 +54,28 @@
  @param keys 所有的属性列表
  @return 返回值。
  */
-+ (id)currentObject:(id)object withIndex:(int)index withAllKeys:(NSArray*)keys{
-    object = [self getclass_copyIvarList:object];
-    NSLog(@"aa=========%@",object);
++ (id)currentObject:(UIViewController *)object withIndex:(int)index withAllKeys:(NSArray*)keys
+{
+    
+    
+//    object = [self getclass_copyIvarList:@"LoginRegisterViewController"];
+    NSLog(@"aa=========%@",[self viewControllerWithTarget:object]);
     return @{};
 }
-+ (NSArray*)getclass_copyIvarList:(Class) class {
++ (UIViewController*)viewControllerWithTarget:(UIViewController*)target
+{
+    for (UIView* next = [target.view superview]; next; next = next.superview) {
+        UIResponder *nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
+}
++ (NSArray*)getclass_copyIvarList:(NSString*)className
+{
     unsigned int count = 0;
-    Ivar* allVariables = class_copyIvarList([UIViewController class], &count);
+    Ivar* allVariables = class_copyIvarList(NSClassFromString(className), &count);
     NSMutableArray* array = [[NSMutableArray alloc] init];
     for (int i = 0;i<count;i++) {
         Ivar ivar = allVariables[i];

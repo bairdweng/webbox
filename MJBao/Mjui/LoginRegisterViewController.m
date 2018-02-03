@@ -28,7 +28,7 @@
     NSString* dic = [[[NSBundle mainBundle] pathForAuxiliaryExecutable:@"MJwebResoures.bundle"] stringByAppendingString:@"/dist"];
     dic = @"/Users/baird/Desktop/webbox/MJBao/MJwebResoures.bundle/dist";
     [self hx_loadLocalURL:[dic stringByAppendingString:@"/index.html"] withMainDicPath:dic withViewStyle:WebBoxViewControllerWk];
-    self.showDocumentTitel = YES;
+    self.showDocumentTitle = YES;
     self.showRefresh = YES;
   
     __weak typeof(self) weakSelf = self;

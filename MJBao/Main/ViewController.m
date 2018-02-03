@@ -45,7 +45,7 @@
     
 //    viewController.dissShowProgressView = YES;
     viewController.hiddenNavigationBar = YES;
-    viewController.showDocumentTitel = YES;
+    viewController.showDocumentTitle = YES;
     __weak typeof(self) weakSelf = self;
     [viewController hx_regisFunctions:@[ @"PrtSc", @"get_start", @"iap", @"regToken", @"jumpCmt", @"clientCopy", @"winOpen", @"callPhone", @"callWeChat" ]
                withCallBack:^(NSString* name, id data) {
