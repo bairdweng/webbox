@@ -19,9 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     NSURLCache* cache = [NSURLCache sharedURLCache];
     [cache setDiskCapacity:1024 * 1024 * 175];
-
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:4] forKey:GSMAINCOLORINDEX];
     return YES;
 }

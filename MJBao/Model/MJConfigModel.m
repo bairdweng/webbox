@@ -42,4 +42,56 @@
     CFRelease(uuidString);
     return result;
 }
+-(NSString*)launchImageName{
+    CGSize viewSize = mainSize;
+    NSString *viewOrientation = @"Portrait";
+    NSString *launchImage = nil;
+    NSArray* imagesDict = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"UILaunchImages"];
+    for (NSDictionary* dict in imagesDict) {
+        CGSize imageSize = CGSizeFromString(dict[@"UILaunchImageSize"]);
+        if (CGSizeEqualToSize(imageSize, viewSize) && [viewOrientation isEqualToString:dict[@"UILaunchImageOrientation"]])
+        {
+            launchImage = dict[@"UILaunchImageName"];
+        }
+    }
+    return launchImage;
+}
+-(NSString *)disPlayName{
+    NSDictionary*infoDic = [[NSBundle mainBundle] infoDictionary];
+    NSString *displayName = [infoDic objectForKey:@"CFBundleDisplayName"];
+    if(!displayName){
+        displayName = NSLocalizedString(@"CFBundleDisplayName",@"总是中文");
+    }
+    if (!displayName) {
+        displayName = @"母包";
+    }
+    return displayName;
+}
+-(NSString *)appBuild{
+    NSDictionary*infoDic = [[NSBundle mainBundle] infoDictionary];
+    NSString *CFBundleVersion = [infoDic objectForKey:@"CFBundleVersion"];
+    if(!CFBundleVersion){
+        return @"1.0.0";
+    } else {
+        return CFBundleVersion;
+    }
+}
+- (NSString*)appVersion
+{
+    NSDictionary*infoDic = [[NSBundle mainBundle] infoDictionary];
+    NSString *bundleShortVersionString = [infoDic objectForKey:@"CFBundleShortVersionString"];
+    if(!bundleShortVersionString){
+        return @"1.0.0";
+    } else {
+        return bundleShortVersionString;
+    }
+}
+-(NSString *)bundleName{
+    NSDictionary*infoDic = [[NSBundle mainBundle] infoDictionary];
+    NSString *displayName = [infoDic objectForKey:@"CFBundleName"];
+    if(!displayName){
+        displayName = @"MJBao";
+    }
+    return displayName;
+}
 @end

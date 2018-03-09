@@ -94,11 +94,22 @@
 		99008F6D201B4064004264D2 /* MJUrlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008F6C201B4064004264D2 /* MJUrlModel.m */; };
 		99008F70201B4222004264D2 /* CSGSKeyschains.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008F6E201B4222004264D2 /* CSGSKeyschains.m */; };
 		99008F73201B423B004264D2 /* CSSSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008F72201B423B004264D2 /* CSSSKeychainQuery.m */; };
-		99008F76201B5482004264D2 /* LoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008F75201B5482004264D2 /* LoginRegisterViewController.m */; };
+		99008F76201B5482004264D2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008F75201B5482004264D2 /* LoginViewController.m */; };
 		99008F78201B54FD004264D2 /* MJwebResoures.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 99008F77201B54FD004264D2 /* MJwebResoures.bundle */; };
+		99300FFA2043EA1E00F7733E /* apiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 99300FF92043EA1E00F7733E /* apiService.m */; };
+		99300FFD2043F0B600F7733E /* CSHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99300FFB2043F0B600F7733E /* CSHttpRequest.m */; };
+		993010002044FA2100F7733E /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99300FFF2044FA2000F7733E /* GameViewController.m */; };
+		9964CF6B202BF86400D50549 /* ATypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9964CF6A202BF86400D50549 /* ATypeView.m */; };
+		9964CF6E202BF89E00D50549 /* BaseTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9964CF6D202BF89E00D50549 /* BaseTypeView.m */; };
+		9964CF71202BFCDD00D50549 /* BTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9964CF70202BFCDD00D50549 /* BTypeView.m */; };
+		9964CF74202BFCF700D50549 /* CTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9964CF73202BFCF700D50549 /* CTypeView.m */; };
+		9964CF77202BFD0700D50549 /* DTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9964CF76202BFD0700D50549 /* DTypeView.m */; };
+		9964CF7A202BFD1400D50549 /* ETypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9964CF79202BFD1400D50549 /* ETypeView.m */; };
+		9964CF7D202BFD2700D50549 /* FTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9964CF7C202BFD2700D50549 /* FTypeView.m */; };
+		9964CF80202BFD3700D50549 /* GTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9964CF7F202BFD3700D50549 /* GTypeView.m */; };
 		9992CBB7201EB85F00A1FA19 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9992CBB6201EB85F00A1FA19 /* NSString+Helper.m */; };
-		9992CBBA201F02BC00A1FA19 /* JSMiddleFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9992CBB9201F02BC00A1FA19 /* JSMiddleFunction.m */; };
-		99C2DF22201C70F000430DF3 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C2DF21201C70EF00430DF3 /* test.png */; };
+		9998DFA22040FFDA0063F903 /* RegiestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9998DFA12040FFDA0063F903 /* RegiestViewController.m */; };
+		9998DFA5204103DB0063F903 /* AgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9998DFA4204103DB0063F903 /* AgreementViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -285,14 +296,37 @@
 		99008F6F201B4222004264D2 /* CSGSKeyschains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSGSKeyschains.h; sourceTree = "<group>"; };
 		99008F71201B423B004264D2 /* CSSSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSSKeychainQuery.h; sourceTree = "<group>"; };
 		99008F72201B423B004264D2 /* CSSSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSSKeychainQuery.m; sourceTree = "<group>"; };
-		99008F74201B5482004264D2 /* LoginRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginRegisterViewController.h; sourceTree = "<group>"; };
-		99008F75201B5482004264D2 /* LoginRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginRegisterViewController.m; sourceTree = "<group>"; };
+		99008F74201B5482004264D2 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		99008F75201B5482004264D2 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		99008F77201B54FD004264D2 /* MJwebResoures.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJwebResoures.bundle; sourceTree = "<group>"; };
+		99300FF82043EA1E00F7733E /* apiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = apiService.h; sourceTree = "<group>"; };
+		99300FF92043EA1E00F7733E /* apiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = apiService.m; sourceTree = "<group>"; };
+		99300FFB2043F0B600F7733E /* CSHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSHttpRequest.m; sourceTree = "<group>"; };
+		99300FFC2043F0B600F7733E /* CSHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSHttpRequest.h; sourceTree = "<group>"; };
+		99300FFE2044FA2000F7733E /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		99300FFF2044FA2000F7733E /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		9964CF69202BF86400D50549 /* ATypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATypeView.h; sourceTree = "<group>"; };
+		9964CF6A202BF86400D50549 /* ATypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATypeView.m; sourceTree = "<group>"; };
+		9964CF6C202BF89E00D50549 /* BaseTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTypeView.h; sourceTree = "<group>"; };
+		9964CF6D202BF89E00D50549 /* BaseTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTypeView.m; sourceTree = "<group>"; };
+		9964CF6F202BFCDD00D50549 /* BTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTypeView.h; sourceTree = "<group>"; };
+		9964CF70202BFCDD00D50549 /* BTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTypeView.m; sourceTree = "<group>"; };
+		9964CF72202BFCF700D50549 /* CTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTypeView.h; sourceTree = "<group>"; };
+		9964CF73202BFCF700D50549 /* CTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTypeView.m; sourceTree = "<group>"; };
+		9964CF75202BFD0700D50549 /* DTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTypeView.h; sourceTree = "<group>"; };
+		9964CF76202BFD0700D50549 /* DTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTypeView.m; sourceTree = "<group>"; };
+		9964CF78202BFD1400D50549 /* ETypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETypeView.h; sourceTree = "<group>"; };
+		9964CF79202BFD1400D50549 /* ETypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETypeView.m; sourceTree = "<group>"; };
+		9964CF7B202BFD2700D50549 /* FTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTypeView.h; sourceTree = "<group>"; };
+		9964CF7C202BFD2700D50549 /* FTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTypeView.m; sourceTree = "<group>"; };
+		9964CF7E202BFD3700D50549 /* GTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTypeView.h; sourceTree = "<group>"; };
+		9964CF7F202BFD3700D50549 /* GTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTypeView.m; sourceTree = "<group>"; };
 		9992CBB5201EB85F00A1FA19 /* NSString+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Helper.h"; sourceTree = "<group>"; };
 		9992CBB6201EB85F00A1FA19 /* NSString+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helper.m"; sourceTree = "<group>"; };
-		9992CBB8201F02BC00A1FA19 /* JSMiddleFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSMiddleFunction.h; sourceTree = "<group>"; };
-		9992CBB9201F02BC00A1FA19 /* JSMiddleFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMiddleFunction.m; sourceTree = "<group>"; };
-		99C2DF21201C70EF00430DF3 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		9998DFA02040FFDA0063F903 /* RegiestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegiestViewController.h; sourceTree = "<group>"; };
+		9998DFA12040FFDA0063F903 /* RegiestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegiestViewController.m; sourceTree = "<group>"; };
+		9998DFA3204103DB0063F903 /* AgreementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgreementViewController.h; sourceTree = "<group>"; };
+		9998DFA4204103DB0063F903 /* AgreementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgreementViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,7 +359,6 @@
 		99008E3C201AD5FB004264D2 /* MJBao */ = {
 			isa = PBXGroup;
 			children = (
-				99C2DF21201C70EF00430DF3 /* test.png */,
 				99008E5F201AD78E004264D2 /* Lib */,
 				99008F67201B3DA8004264D2 /* Model */,
 				99008E60201AD7B3004264D2 /* Help */,
@@ -358,8 +391,6 @@
 			children = (
 				99008E5C201AD767004264D2 /* WebBoxViewController.h */,
 				99008E5D201AD767004264D2 /* WebBoxViewController.m */,
-				9992CBB8201F02BC00A1FA19 /* JSMiddleFunction.h */,
-				9992CBB9201F02BC00A1FA19 /* JSMiddleFunction.m */,
 			);
 			path = WebBox;
 			sourceTree = "<group>";
@@ -388,6 +419,10 @@
 		99008E60201AD7B3004264D2 /* Help */ = {
 			isa = PBXGroup;
 			children = (
+				99300FFC2043F0B600F7733E /* CSHttpRequest.h */,
+				99300FFB2043F0B600F7733E /* CSHttpRequest.m */,
+				99300FF82043EA1E00F7733E /* apiService.h */,
+				99300FF92043EA1E00F7733E /* apiService.m */,
 				99008F5D201ADB99004264D2 /* Header.h */,
 				99008F64201B1ED6004264D2 /* UIColor+Hex.h */,
 				99008F65201B1ED6004264D2 /* UIColor+Hex.m */,
@@ -406,8 +441,15 @@
 		99008E61201AD7F1004264D2 /* Mjui */ = {
 			isa = PBXGroup;
 			children = (
-				99008F74201B5482004264D2 /* LoginRegisterViewController.h */,
-				99008F75201B5482004264D2 /* LoginRegisterViewController.m */,
+				9964CF68202BF82D00D50549 /* views */,
+				99008F74201B5482004264D2 /* LoginViewController.h */,
+				99008F75201B5482004264D2 /* LoginViewController.m */,
+				9998DFA02040FFDA0063F903 /* RegiestViewController.h */,
+				9998DFA12040FFDA0063F903 /* RegiestViewController.m */,
+				9998DFA3204103DB0063F903 /* AgreementViewController.h */,
+				9998DFA4204103DB0063F903 /* AgreementViewController.m */,
+				99300FFE2044FA2000F7733E /* GameViewController.h */,
+				99300FFF2044FA2000F7733E /* GameViewController.m */,
 			);
 			path = Mjui;
 			sourceTree = "<group>";
@@ -719,6 +761,29 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		9964CF68202BF82D00D50549 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9964CF6C202BF89E00D50549 /* BaseTypeView.h */,
+				9964CF6D202BF89E00D50549 /* BaseTypeView.m */,
+				9964CF69202BF86400D50549 /* ATypeView.h */,
+				9964CF6A202BF86400D50549 /* ATypeView.m */,
+				9964CF6F202BFCDD00D50549 /* BTypeView.h */,
+				9964CF70202BFCDD00D50549 /* BTypeView.m */,
+				9964CF72202BFCF700D50549 /* CTypeView.h */,
+				9964CF73202BFCF700D50549 /* CTypeView.m */,
+				9964CF75202BFD0700D50549 /* DTypeView.h */,
+				9964CF76202BFD0700D50549 /* DTypeView.m */,
+				9964CF78202BFD1400D50549 /* ETypeView.h */,
+				9964CF79202BFD1400D50549 /* ETypeView.m */,
+				9964CF7B202BFD2700D50549 /* FTypeView.h */,
+				9964CF7C202BFD2700D50549 /* FTypeView.m */,
+				9964CF7E202BFD3700D50549 /* GTypeView.h */,
+				9964CF7F202BFD3700D50549 /* GTypeView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -779,7 +844,6 @@
 			files = (
 				99008F37201AD9E0004264D2 /* IQKeyboardManager.bundle in Resources */,
 				99008E4A201AD5FB004264D2 /* LaunchScreen.storyboard in Resources */,
-				99C2DF22201C70F000430DF3 /* test.png in Resources */,
 				99008E47201AD5FB004264D2 /* Assets.xcassets in Resources */,
 				99008F78201B54FD004264D2 /* MJwebResoures.bundle in Resources */,
 				99008E45201AD5FB004264D2 /* Main.storyboard in Resources */,
@@ -795,6 +859,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99008F50201AD9E0004264D2 /* UIImage+ImageEffects.m in Sources */,
+				9964CF6B202BF86400D50549 /* ATypeView.m in Sources */,
 				99008F1D201AD9E0004264D2 /* CSSBJson4StreamWriterState.m in Sources */,
 				99008F3C201AD9E0004264D2 /* M13ProgressViewBar.m in Sources */,
 				99008F32201AD9E0004264D2 /* IQBarButtonItem.m in Sources */,
@@ -802,17 +867,20 @@
 				99008F55201AD9E0004264D2 /* MASViewAttribute.m in Sources */,
 				99008F38201AD9E0004264D2 /* CSReachability.m in Sources */,
 				99008F4B201AD9E0004264D2 /* SCLAlertViewStyleKit.m in Sources */,
+				9964CF71202BFCDD00D50549 /* BTypeView.m in Sources */,
 				99008F42201AD9E0004264D2 /* M13ProgressViewPie.m in Sources */,
 				99008E5A201AD677004264D2 /* ViewController.m in Sources */,
 				99008F40201AD9E0004264D2 /* M13ProgressViewLetterpress.m in Sources */,
-				9992CBBA201F02BC00A1FA19 /* JSMiddleFunction.m in Sources */,
+				9998DFA5204103DB0063F903 /* AgreementViewController.m in Sources */,
 				99008F18201AD9E0004264D2 /* CSAFURLSessionManager.m in Sources */,
 				99008F57201AD9E0004264D2 /* NSArray+MASAdditions.m in Sources */,
 				99008F49201AD9E0004264D2 /* SCLAlertsView.m in Sources */,
+				9964CF7A202BFD1400D50549 /* ETypeView.m in Sources */,
 				99008F46201AD9E0004264D2 /* M13ProgressViewSegmentedRing.m in Sources */,
 				99008F19201AD9E0004264D2 /* CSLRTextField.m in Sources */,
 				99008F73201B423B004264D2 /* CSSSKeychainQuery.m in Sources */,
 				99008F23201AD9E0004264D2 /* UIColor+Hex.m in Sources */,
+				99300FFA2043EA1E00F7733E /* apiService.m in Sources */,
 				99008F4F201AD9E0004264D2 /* SCLTimerDisplay.m in Sources */,
 				99008F3A201AD9E0004264D2 /* CSGTMBase64.m in Sources */,
 				99008F31201AD9E0004264D2 /* IQTextView.m in Sources */,
@@ -820,13 +888,19 @@
 				99008F6A201B3DCC004264D2 /* MJConfigModel.m in Sources */,
 				99008E59201AD677004264D2 /* AppDelegate.m in Sources */,
 				99008F33201AD9E0004264D2 /* IQPreviousNextView.m in Sources */,
+				9964CF7D202BFD2700D50549 /* FTypeView.m in Sources */,
 				99008F3E201AD9E0004264D2 /* M13ProgressViewFilteredImage.m in Sources */,
+				9998DFA22040FFDA0063F903 /* RegiestViewController.m in Sources */,
 				99008F43201AD9E0004264D2 /* M13ProgressViewRadiative.m in Sources */,
 				99008F66201B1ED6004264D2 /* UIColor+Hex.m in Sources */,
+				9964CF74202BFCF700D50549 /* CTypeView.m in Sources */,
 				99008E4D201AD5FB004264D2 /* main.m in Sources */,
+				993010002044FA2100F7733E /* GameViewController.m in Sources */,
 				99008F63201B1ED0004264D2 /* CSColorManagement.m in Sources */,
 				99008F1F201AD9E0004264D2 /* CSSBJson4Writer.m in Sources */,
 				99008F56201AD9E0004264D2 /* MASViewConstraint.m in Sources */,
+				9964CF6E202BF89E00D50549 /* BaseTypeView.m in Sources */,
+				99300FFD2043F0B600F7733E /* CSHttpRequest.m in Sources */,
 				99008E5E201AD767004264D2 /* WebBoxViewController.m in Sources */,
 				99008F28201AD9E0004264D2 /* SVRadialGradientLayer.m in Sources */,
 				99008F35201AD9E0004264D2 /* IQToolbar.m in Sources */,
@@ -867,17 +941,19 @@
 				99008F25201AD9E0004264D2 /* SVIndefiniteAnimatedView.m in Sources */,
 				99008F39201AD9E0004264D2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				99008F1B201AD9E0004264D2 /* CSSBJson4StreamParserState.m in Sources */,
+				9964CF80202BFD3700D50549 /* GTypeView.m in Sources */,
 				99008F4E201AD9E0004264D2 /* SCLTextView.m in Sources */,
 				99008F52201AD9E0004264D2 /* MASConsstraint.m in Sources */,
 				99008F3F201AD9E0004264D2 /* M13ProgressViewImage.m in Sources */,
 				99008F34201AD9E0004264D2 /* IQTitleBarButtonItem.m in Sources */,
 				99008F17201AD9E0004264D2 /* CSAFURLResponseSerialization.m in Sources */,
+				9964CF77202BFD0700D50549 /* DTypeView.m in Sources */,
 				99008F1A201AD9E0004264D2 /* CSSBJson4Parser.m in Sources */,
 				99008F53201AD9E0004264D2 /* MASConstraintMaker.m in Sources */,
 				99008F16201AD9E0004264D2 /* CSAFURLRequestSerialization.m in Sources */,
 				99008F36201AD9E0004264D2 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				99008F26201AD9E0004264D2 /* SVProgressAnimatedView.m in Sources */,
-				99008F76201B5482004264D2 /* LoginRegisterViewController.m in Sources */,
+				99008F76201B5482004264D2 /* LoginViewController.m in Sources */,
 				9992CBB7201EB85F00A1FA19 /* NSString+Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1012,6 +1088,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 47425P9QYK;
 				INFOPLIST_FILE = MJBao/Info.plist;
@@ -1028,6 +1105,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 47425P9QYK;
 				INFOPLIST_FILE = MJBao/Info.plist;

@@ -9,7 +9,6 @@
 #import "WebBoxViewController.h"
 #import <JavaScriptCore/JavaScriptCore.h>
 #import "Header.h"
-#import "JSMiddleFunction.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
 @interface WebBoxViewController () <UIWebViewDelegate,
@@ -72,7 +71,6 @@
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [self deallocProgress];
-    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -278,7 +276,6 @@
 - (void)userContentController:(WKUserContentController*)userContentController
       didReceiveScriptMessage:(WKScriptMessage*)message
 {
-    
     __weak typeof(self) weakSelf = self;
     if (message.name && [message.name isEqualToString:@"Native"]) {
         NSDictionary *bodyParam = (NSDictionary*)message.body;
@@ -291,67 +288,7 @@
                 }
             }
         }
-        //设置动态设置webBox属性。
-        if ([function isEqualToString:@"webBoxConfig"]) {
-            if ([parameters isKindOfClass:[NSDictionary class]] && parameters.allKeys.count > 0) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [weakSelf dealFountions:parameters];
-                });
-            }
-        }
     }
-}
-
-/**
- 处理函数
-
- @param dic 数组
- */
-- (void)dealFountions:(NSDictionary*)dic
-{
-    for (NSString* str in [self getclass_copyIvarList:@"WebBoxViewController"]){
-
-        NSLog(@"str=====%@",str);
-    }
-//    SEL selector = NSSelectorFromString(@"hiddenNavigationBar:");
-//    IMP imp = [self methodForSelector:selector];
-//    void (*func)(id, SEL,id) = (void *)imp;
-//    func(self, selector, [NSNumber numberWithBool:YES]);
-    //    self.hiddenNavigationBar = YES;
-    [self changePropertyKey:@"fuck" withValue:@(YES)];
-    
-    [self reloadUIConfig];
-}
--(void)fuckyou:(NSString *)fuck{
-    
-}
--(void)changePropertyKey:(NSString *)key withValue:(id)value {
-    unsigned int count = 0;
-    Ivar *ivar = class_copyIvarList(NSClassFromString(@"WebBoxViewController"), &count);
-    for (int i = 0; i<count; i++) {
-        Ivar var = ivar[i];
-        const char *varName = ivar_getName(var);
-        NSString *name = [NSString stringWithUTF8String:varName];
-        NSLog(@"name========================%@",name);
-        if ([name isEqualToString:[NSString stringWithFormat:@"_%@", key]]) {
-            //动态修改_name实例变量的值
-            object_setIvar(self, var, value);
-            break;
-        }
-    }
-}
--(NSArray*)getclass_copyIvarList:(NSString*)className{
-    unsigned int count = 0;
-    Ivar* allVariables = class_copyIvarList(NSClassFromString(className), &count);
-    NSMutableArray* array = [[NSMutableArray alloc] init];
-    for (int i = 0;i<count;i++) {
-        Ivar ivar = allVariables[i];
-        const char *variablename = ivar_getName(ivar); //获取成员变量名称
-//        const char* variableType = ivar_getTypeEncoding(ivar); //获取成员变量类型
-        NSString* name = [NSString stringWithUTF8String:variablename];
-        [array addObject:name];
-    }
-    return array;
 }
 - (void)webView:(WKWebView*)webView didFinishNavigation:(WKNavigation*)navigation
 {

@@ -24,7 +24,6 @@ typedef void (^CallBackDataBlock)(NSString* name, id data);
 @property (nonatomic, assign) BOOL dissScrollViewbounces; //禁止跳动。
 @property (nonatomic, assign) BOOL dissShowProgressView; //禁止显示进度条。
 @property (nonatomic, assign) BOOL showRefresh; //显示右边刷新按钮。
-@property(assign)BOOL *fuck;
 /**
  加载链接
  @param URL URL

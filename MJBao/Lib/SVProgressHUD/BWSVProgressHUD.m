@@ -75,6 +75,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
 #else
     dispatch_once(&once, ^{ sharedView = [[self alloc] initWithFrame:[[UIScreen mainScreen] bounds]]; });
 #endif
+    sharedView.minimumDismissTimeInterval = 1.5f;
     return sharedView;
 }
 
@@ -148,7 +149,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
 }
 
 + (void)setImageViewSize:(CGSize)size {
-	[self sharedView].imageViewSize = size;
+    [self sharedView].imageViewSize = size;
 }
 
 + (void)setInfoImage:(UIImage*)image {
@@ -393,7 +394,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
         _ringNoTextRadius = 24.0f;
         
         _cornerRadius = 14.0f;
-		
+        
         _imageViewSize = CGSizeMake(28.0f, 28.0f);
         
         _graceTimeInterval = 0.0f;
@@ -1344,7 +1345,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
         BOOL windowIsVisible = !window.hidden && window.alpha > 0;
         BOOL windowLevelSupported = (window.windowLevel >= UIWindowLevelNormal && window.windowLevel <= self.maxSupportedWindowLevel);
         BOOL windowKeyWindow = window.isKeyWindow;
-			
+        
         if(windowOnMainScreen && windowIsVisible && windowLevelSupported && windowKeyWindow) {
             return window;
         }
@@ -1405,15 +1406,15 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
 
 #if TARGET_OS_IOS && __IPHONE_OS_VERSION_MAX_ALLOWED >= 100000
 - (UINotificationFeedbackGenerator *)hapticGenerator {
-	// Only return if haptics are enabled
-	if(!self.hapticsEnabled) {
-		return nil;
-	}
-	
-	if(!_hapticGenerator) {
-		_hapticGenerator = [[UINotificationFeedbackGenerator alloc] init];
-	}
-	return _hapticGenerator;
+    // Only return if haptics are enabled
+    if(!self.hapticsEnabled) {
+        return nil;
+    }
+    
+    if(!_hapticGenerator) {
+        _hapticGenerator = [[UINotificationFeedbackGenerator alloc] init];
+    }
+    return _hapticGenerator;
 }
 #endif
 
