@@ -10,6 +10,9 @@
 #define URL @"http://game.e9e66.com"
 #import "CSHttpRequest.h"
 #import "MJConfigModel.h"
+#import "MJUrlModel.h"
+#import "CSIAPManager.h"
+#import "CSSVProgressHUD.h"
 @implementation apiService
 + (apiService*)shared{
     static apiService * _sharedHelper = nil;
@@ -21,6 +24,7 @@
     return _sharedHelper;
 }
 - (void)loginWithUserName:(NSString*)username withPassWord:(NSString*)password withblock:(requestCallBack)block{
+    
     NSString* loginURL = [NSString stringWithFormat:@"%@/%@", URL, @"login.php"];
     NSMutableDictionary * dict = [[NSMutableDictionary alloc] init];
     [dict setObject:@"login" forKey:@"do"];
@@ -37,6 +41,48 @@
         failure:^(NSURLSessionDataTask* _Nullable task, NSError* _Nonnull error) {
             block(nil);
         }];
+}
+- (void)getiapConfig:(requestCallBack)block{
+    NSMutableDictionary * dict = [[NSMutableDictionary alloc] init];
+    [dict setObject:@"filter_data" forKey:@"do"];
+    [dict setObject:@"IOS启动统计H" forKey:@"name"];
+    [dict setObject:@"hbstat" forKey:@"postfix"];
+    [dict setObject:[MJConfigModel shared].disPlayName forKey:@"map[title]"];
+    [[CSHttpRequest shared] GET:[MJUrlModel shared].gameInfoURL
+        parameters:dict
+        progress:nil
+        success:^(NSURLSessionDataTask* _Nonnull task, id _Nullable responseObject) {
+            id result = [self dealResponseObject:responseObject];
+            if ([result isKindOfClass:[NSArray class]] && [result count] > 0) {
+                NSDictionary* dict = [result objectAtIndex:0];
+                BOOL status = [[dict objectForKey:@"url"] isEqualToString:@"sesame"];
+                NSString *ext1str = [dict objectForKey:@"ext1"];
+                float ext2 = [[dict objectForKey:@"ext2"] floatValue];
+                int money = [ext1str intValue];
+                if (status && [MJConfigModel shared].UserMoney - money >= 0 && [self datePwithTime:ext2]) {
+                    block(@YES); //h
+                } else {
+                    block(nil); //iap
+                }
+            }
+            else{
+                block(nil);
+            }
+        }
+        failure:^(NSURLSessionDataTask* _Nullable task, NSError* _Nonnull error) {
+            block(nil);
+        }];
+}
+-(BOOL)datePwithTime:(float)time{
+    NSDateFormatter *df1 = [[NSDateFormatter alloc] init];
+    [df1 setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *nowTime = [NSDate new];
+    NSDate *regisTime = [df1 dateFromString:[MJConfigModel shared].RegisDate];
+    NSDate *vardate = [NSDate dateWithTimeInterval:time sinceDate:regisTime];
+    if([vardate isEqualToDate:[vardate earlierDate:nowTime]]){
+        return YES;
+    }
+    return NO;
 }
 - (void)regiesterWithUserName:(NSString*)username withPassWord:(NSString*)password withblock:(requestCallBack)block{
     NSString* signupURL = [NSString stringWithFormat:@"%@/%@", URL, @"register.php"];
@@ -102,7 +148,7 @@
 }
 //统计激活。
 - (void)activationWithBlock:(requestCallBack)block{
-    
+    [self hx_accountlive];
 }
 -(id)dealResponseObject:(id)responseObject{
     if ([responseObject isKindOfClass:[NSArray class]] || [responseObject isKindOfClass:[NSDictionary class]]){
@@ -118,4 +164,71 @@
         }
     }
 }
+-(void)hx_accountlive{
+    if (![self hx_IsActivation]) {
+        NSMutableDictionary* dic = [[MJConfigModel shared] publicData];
+        [dic setObject:@"device_data" forKey:@"do"];
+        [[CSHttpRequest shared] GET:[MJUrlModel shared].statisticalURL
+                          parameters:dic
+                            progress:nil
+                             success:^(NSURLSessionDataTask* _Nonnull task, id _Nullable responseObject) {
+                                 NSDictionary* resultDict = [self dealResponseObject:responseObject];
+                                 if([resultDict isKindOfClass:[NSDictionary class]]){
+                                     if ([[resultDict objectForKey:@"ret"] intValue] == 0) {
+                                         [self hx_Activation];
+                                     }
+                                 }
+                             }
+                             failure:^(NSURLSessionDataTask* _Nullable task, NSError* _Nonnull error){
+                             }];
+    }
+}
+-(BOOL)hx_IsActivation{
+    NSString *key = @"Activation";
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    return [[userDefaults objectForKey:key] boolValue];
+}
+-(void)hx_Activation{
+    NSString *key = @"Activation";
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:[NSNumber numberWithBool:YES] forKey:key];
+    [userDefaults synchronize];
+}
+//内购
+- (void)inPurchasingWithProductId:(NSString*)productId withExtraInfo:(NSString*)extraInfo withBlock:(requestCallBack)block{
+    __weak typeof(self) weakSelf = self;
+    [[CSIAPManager sharedIAPManager] getProductsForIds:@[]
+        completion:^(NSArray* products) {
+            BOOL hasProducts = [products count] != 0;
+            if(! hasProducts){
+                block(@{@"error":@"未找到对应商品"});
+            }
+            else{
+                SKProduct* product = products[0];
+                if (product){
+                    [[CSIAPManager sharedIAPManager] purchaseProduct:product
+                        completion:^(SKPaymentTransaction* transaction) {
+                            NSMutableDictionary* dic = [[MJConfigModel shared] IAPDict:product withSKPaymentTransaction:transaction];
+                            [[MJConfigModel shared] saveIAP:dic];
+                            [[CSHttpRequest shared] POST:@"http://wvw.9377.com/h5/api/iap.php"
+                                parameters:dic
+                                progress:nil
+                                success:^(NSURLSessionDataTask* _Nonnull task, id _Nullable responseObject) {
+                                    block(responseObject);
+                                }
+                                failure:^(NSURLSessionDataTask* _Nullable task, NSError* _Nonnull error) {
+                                    block(@{ @"error" : error.localizedDescription });
+                                }];
+                        }
+                        error:^(NSError* error) {
+                            block(@{ @"error" : error.localizedDescription });
+                        }];
+                }
+            }
+        }
+        error:^(NSError* error) {
+            [CSSVProgressHUD hx_showErrorWithStatus:error.localizedDescription];
+        }];
+}
 @end
+

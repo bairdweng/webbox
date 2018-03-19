@@ -29,29 +29,27 @@
     __weak typeof(typeView) weaktypeView = typeView;
     [typeView setLoginBlock:^(UIButton* button){
         if (weaktypeView.userNametextField.text.length==0) {
-            [BWSVProgressHUD showErrorWithStatus:@"请输入您的用户名"];
+            [CSSVProgressHUD hx_showErrorWithStatus:@"请输入您的用户名"];
         } else if (weaktypeView.userNametextField.text.length < 6) {
-            [BWSVProgressHUD showErrorWithStatus:@"请输入6位数以上的密码"];
+            [CSSVProgressHUD hx_showErrorWithStatus:@"请输入6位数以上的密码"];
         }
         else{
-            [[apiService shared] loginWithUserName:weaktypeView.userNametextField.text
-                                      withPassWord:weaktypeView.passWordtextField.text
-                                         withblock:^(id dic) {
-                                             if([dic objectForKey:@"status"]){
-                                                 NSInteger status = [[dic objectForKey:@"status"]intValue];
-                                                 NSString* msg = [dic objectForKey:@"msg"];
-                                                 if(status==0){
+            [CSSVProgressHUD hx_showWithStatus:@"正在注册"];
+            [[apiService shared] regiesterWithUserName:weaktypeView.userNametextField.text
+                                          withPassWord:weaktypeView.passWordtextField.text
+                                             withblock:^(id dic) {
+                                                 if ([dic objectForKey:@"status"] && [[dic objectForKey:@"status"] intValue] == 0) {
                                                      [[NSUserDefaults standardUserDefaults] setObject:weaktypeView.userNametextField.text forKey:@"userName"];
                                                      [[NSUserDefaults standardUserDefaults] setObject:weaktypeView.passWordtextField.text forKey:@"passWord"];
-                                                     [BWSVProgressHUD showSuccessWithStatus:@"登录成功"];
-                                                     GameViewController *gameViewControler = [[GameViewController alloc]init];
+                                                     [CSSVProgressHUD hx_showSuccessWithStatus:@"登录成功"];
+                                                     GameViewController* gameViewControler = [[GameViewController alloc] init];
                                                      [weakSelf presentViewController:gameViewControler animated:NO completion:nil];
                                                  }
                                                  else{
-                                                     [BWSVProgressHUD showErrorWithStatus:msg];
+                                                     NSString* msg = [dic objectForKey:@"msg"];
+                                                     [CSSVProgressHUD hx_showErrorWithStatus:msg];
                                                  }
-                                             }
-                                         }];
+                                             }];
         }
     }];
     [typeView.loginBtn setTitle:@"注册" forState:UIControlStateNormal];
@@ -76,3 +74,4 @@
 */
 
 @end
+

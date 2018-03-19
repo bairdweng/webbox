@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
 
     NSString* mainlocalURL = [[[NSBundle mainBundle] pathForAuxiliaryExecutable:@"MJwebResoures.bundle"] stringByAppendingString:@"/dist"];
-    //    - (void)hx_loadLocalURL:(NSString*)URL withMainDicPath:(NSString *)path withViewStyle:(WebBoxViewControllerStyle)style;
     [self hx_loadLocalURL:[mainlocalURL stringByAppendingString:@"/agreement.html"] withMainDicPath:mainlocalURL withViewStyle:WebBoxViewControllerWk];
     [super viewDidLoad];
 

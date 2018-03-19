@@ -54,20 +54,6 @@
 		99008F38201AD9E0004264D2 /* CSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008EBD201AD9DF004264D2 /* CSReachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		99008F39201AD9E0004264D2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008EC0201AD9DF004264D2 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		99008F3A201AD9E0004264D2 /* CSGTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008EC3201AD9E0004264D2 /* CSGTMBase64.m */; };
-		99008F3B201AD9E0004264D2 /* M13ProgressdViewMetro.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008EC7201AD9E0004264D2 /* M13ProgressdViewMetro.m */; };
-		99008F3C201AD9E0004264D2 /* M13ProgressViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008EC9201AD9E0004264D2 /* M13ProgressViewBar.m */; };
-		99008F3D201AD9E0004264D2 /* M13ProgressViewBorderedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008ECB201AD9E0004264D2 /* M13ProgressViewBorderedBar.m */; };
-		99008F3E201AD9E0004264D2 /* M13ProgressViewFilteredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008ECD201AD9E0004264D2 /* M13ProgressViewFilteredImage.m */; };
-		99008F3F201AD9E0004264D2 /* M13ProgressViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008ECF201AD9E0004264D2 /* M13ProgressViewImage.m */; };
-		99008F40201AD9E0004264D2 /* M13ProgressViewLetterpress.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008ED1201AD9E0004264D2 /* M13ProgressViewLetterpress.m */; };
-		99008F41201AD9E0004264D2 /* M13ProgressViewMetroDotPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008ED3201AD9E0004264D2 /* M13ProgressViewMetroDotPolygon.m */; };
-		99008F42201AD9E0004264D2 /* M13ProgressViewPie.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008ED5201AD9E0004264D2 /* M13ProgressViewPie.m */; };
-		99008F43201AD9E0004264D2 /* M13ProgressViewRadiative.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008ED7201AD9E0004264D2 /* M13ProgressViewRadiative.m */; };
-		99008F44201AD9E0004264D2 /* M13ProgressViewRing.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008ED9201AD9E0004264D2 /* M13ProgressViewRing.m */; };
-		99008F45201AD9E0004264D2 /* M13ProgressViewSegmentedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008EDB201AD9E0004264D2 /* M13ProgressViewSegmentedBar.m */; };
-		99008F46201AD9E0004264D2 /* M13ProgressViewSegmentedRing.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008EDD201AD9E0004264D2 /* M13ProgressViewSegmentedRing.m */; };
-		99008F47201AD9E0004264D2 /* M13ProgressViewStripedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008EDF201AD9E0004264D2 /* M13ProgressViewStripedBar.m */; };
-		99008F48201AD9E0004264D2 /* M13PsrogressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008EE1201AD9E0004264D2 /* M13PsrogressView.m */; };
 		99008F49201AD9E0004264D2 /* SCLAlertsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008EE4201AD9E0004264D2 /* SCLAlertsView.m */; };
 		99008F4A201AD9E0004264D2 /* SCLAlertViewResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008EE6201AD9E0004264D2 /* SCLAlertViewResponder.m */; };
 		99008F4B201AD9E0004264D2 /* SCLAlertViewStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 99008EE8201AD9E0004264D2 /* SCLAlertViewStyleKit.m */; };
@@ -110,6 +96,24 @@
 		9992CBB7201EB85F00A1FA19 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9992CBB6201EB85F00A1FA19 /* NSString+Helper.m */; };
 		9998DFA22040FFDA0063F903 /* RegiestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9998DFA12040FFDA0063F903 /* RegiestViewController.m */; };
 		9998DFA5204103DB0063F903 /* AgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9998DFA4204103DB0063F903 /* AgreementViewController.m */; };
+		99A657152057A52F0015CA97 /* CSGameProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A657132057A52F0015CA97 /* CSGameProgressView.m */; };
+		99A657332057A54A0015CA97 /* M13ProgressdViewMetro.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A657182057A54A0015CA97 /* M13ProgressdViewMetro.m */; };
+		99A657342057A54A0015CA97 /* M13ProgressViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A6571A2057A54A0015CA97 /* M13ProgressViewBar.m */; };
+		99A657352057A54A0015CA97 /* M13ProgressViewBorderedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A6571C2057A54A0015CA97 /* M13ProgressViewBorderedBar.m */; };
+		99A657362057A54A0015CA97 /* M13ProgressViewFilteredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A6571E2057A54A0015CA97 /* M13ProgressViewFilteredImage.m */; };
+		99A657372057A54A0015CA97 /* M13ProgressViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A657202057A54A0015CA97 /* M13ProgressViewImage.m */; };
+		99A657382057A54A0015CA97 /* M13ProgressViewLetterpress.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A657222057A54A0015CA97 /* M13ProgressViewLetterpress.m */; };
+		99A657392057A54A0015CA97 /* M13ProgressViewMetroDotPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A657242057A54A0015CA97 /* M13ProgressViewMetroDotPolygon.m */; };
+		99A6573A2057A54A0015CA97 /* M13ProgressViewPie.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A657262057A54A0015CA97 /* M13ProgressViewPie.m */; };
+		99A6573B2057A54A0015CA97 /* M13ProgressViewRadiative.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A657282057A54A0015CA97 /* M13ProgressViewRadiative.m */; };
+		99A6573C2057A54A0015CA97 /* M13ProgressViewRing.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A6572A2057A54A0015CA97 /* M13ProgressViewRing.m */; };
+		99A6573D2057A54A0015CA97 /* M13ProgressViewSegmentedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A6572C2057A54A0015CA97 /* M13ProgressViewSegmentedBar.m */; };
+		99A6573E2057A54A0015CA97 /* M13ProgressViewSegmentedRing.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A6572E2057A54A0015CA97 /* M13ProgressViewSegmentedRing.m */; };
+		99A6573F2057A54A0015CA97 /* M13ProgressViewStripedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A657302057A54A0015CA97 /* M13ProgressViewStripedBar.m */; };
+		99A657402057A54A0015CA97 /* M13PsrogressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A657322057A54A0015CA97 /* M13PsrogressView.m */; };
+		99A657432057B4010015CA97 /* ProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A657422057B4010015CA97 /* ProgressController.m */; };
+		99A657462057C3F90015CA97 /* CSSVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A657442057C3F90015CA97 /* CSSVProgressHUD.m */; };
+		99A657492058B4230015CA97 /* CSIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A657482058B4220015CA97 /* CSIAPManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -209,34 +213,6 @@
 		99008EC2201AD9E0004264D2 /* CSGTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSGTMBase64.h; sourceTree = "<group>"; };
 		99008EC3201AD9E0004264D2 /* CSGTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSGTMBase64.m; sourceTree = "<group>"; };
 		99008EC4201AD9E0004264D2 /* CSGTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSGTMDefines.h; sourceTree = "<group>"; };
-		99008EC6201AD9E0004264D2 /* M13ProgressdViewMetro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressdViewMetro.h; sourceTree = "<group>"; };
-		99008EC7201AD9E0004264D2 /* M13ProgressdViewMetro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressdViewMetro.m; sourceTree = "<group>"; };
-		99008EC8201AD9E0004264D2 /* M13ProgressViewBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewBar.h; sourceTree = "<group>"; };
-		99008EC9201AD9E0004264D2 /* M13ProgressViewBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewBar.m; sourceTree = "<group>"; };
-		99008ECA201AD9E0004264D2 /* M13ProgressViewBorderedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewBorderedBar.h; sourceTree = "<group>"; };
-		99008ECB201AD9E0004264D2 /* M13ProgressViewBorderedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewBorderedBar.m; sourceTree = "<group>"; };
-		99008ECC201AD9E0004264D2 /* M13ProgressViewFilteredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewFilteredImage.h; sourceTree = "<group>"; };
-		99008ECD201AD9E0004264D2 /* M13ProgressViewFilteredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewFilteredImage.m; sourceTree = "<group>"; };
-		99008ECE201AD9E0004264D2 /* M13ProgressViewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewImage.h; sourceTree = "<group>"; };
-		99008ECF201AD9E0004264D2 /* M13ProgressViewImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewImage.m; sourceTree = "<group>"; };
-		99008ED0201AD9E0004264D2 /* M13ProgressViewLetterpress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewLetterpress.h; sourceTree = "<group>"; };
-		99008ED1201AD9E0004264D2 /* M13ProgressViewLetterpress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewLetterpress.m; sourceTree = "<group>"; };
-		99008ED2201AD9E0004264D2 /* M13ProgressViewMetroDotPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewMetroDotPolygon.h; sourceTree = "<group>"; };
-		99008ED3201AD9E0004264D2 /* M13ProgressViewMetroDotPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewMetroDotPolygon.m; sourceTree = "<group>"; };
-		99008ED4201AD9E0004264D2 /* M13ProgressViewPie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewPie.h; sourceTree = "<group>"; };
-		99008ED5201AD9E0004264D2 /* M13ProgressViewPie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewPie.m; sourceTree = "<group>"; };
-		99008ED6201AD9E0004264D2 /* M13ProgressViewRadiative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewRadiative.h; sourceTree = "<group>"; };
-		99008ED7201AD9E0004264D2 /* M13ProgressViewRadiative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewRadiative.m; sourceTree = "<group>"; };
-		99008ED8201AD9E0004264D2 /* M13ProgressViewRing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewRing.h; sourceTree = "<group>"; };
-		99008ED9201AD9E0004264D2 /* M13ProgressViewRing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewRing.m; sourceTree = "<group>"; };
-		99008EDA201AD9E0004264D2 /* M13ProgressViewSegmentedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewSegmentedBar.h; sourceTree = "<group>"; };
-		99008EDB201AD9E0004264D2 /* M13ProgressViewSegmentedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewSegmentedBar.m; sourceTree = "<group>"; };
-		99008EDC201AD9E0004264D2 /* M13ProgressViewSegmentedRing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewSegmentedRing.h; sourceTree = "<group>"; };
-		99008EDD201AD9E0004264D2 /* M13ProgressViewSegmentedRing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewSegmentedRing.m; sourceTree = "<group>"; };
-		99008EDE201AD9E0004264D2 /* M13ProgressViewStripedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewStripedBar.h; sourceTree = "<group>"; };
-		99008EDF201AD9E0004264D2 /* M13ProgressViewStripedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewStripedBar.m; sourceTree = "<group>"; };
-		99008EE0201AD9E0004264D2 /* M13PsrogressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13PsrogressView.h; sourceTree = "<group>"; };
-		99008EE1201AD9E0004264D2 /* M13PsrogressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13PsrogressView.m; sourceTree = "<group>"; };
 		99008EE3201AD9E0004264D2 /* SCLAlertsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLAlertsView.h; sourceTree = "<group>"; };
 		99008EE4201AD9E0004264D2 /* SCLAlertsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLAlertsView.m; sourceTree = "<group>"; };
 		99008EE5201AD9E0004264D2 /* SCLAlertViewResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLAlertViewResponder.h; sourceTree = "<group>"; };
@@ -327,6 +303,42 @@
 		9998DFA12040FFDA0063F903 /* RegiestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegiestViewController.m; sourceTree = "<group>"; };
 		9998DFA3204103DB0063F903 /* AgreementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgreementViewController.h; sourceTree = "<group>"; };
 		9998DFA4204103DB0063F903 /* AgreementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgreementViewController.m; sourceTree = "<group>"; };
+		99A657132057A52F0015CA97 /* CSGameProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSGameProgressView.m; sourceTree = "<group>"; };
+		99A657142057A52F0015CA97 /* CSGameProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSGameProgressView.h; sourceTree = "<group>"; };
+		99A657172057A54A0015CA97 /* M13ProgressdViewMetro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressdViewMetro.h; sourceTree = "<group>"; };
+		99A657182057A54A0015CA97 /* M13ProgressdViewMetro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressdViewMetro.m; sourceTree = "<group>"; };
+		99A657192057A54A0015CA97 /* M13ProgressViewBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewBar.h; sourceTree = "<group>"; };
+		99A6571A2057A54A0015CA97 /* M13ProgressViewBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewBar.m; sourceTree = "<group>"; };
+		99A6571B2057A54A0015CA97 /* M13ProgressViewBorderedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewBorderedBar.h; sourceTree = "<group>"; };
+		99A6571C2057A54A0015CA97 /* M13ProgressViewBorderedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewBorderedBar.m; sourceTree = "<group>"; };
+		99A6571D2057A54A0015CA97 /* M13ProgressViewFilteredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewFilteredImage.h; sourceTree = "<group>"; };
+		99A6571E2057A54A0015CA97 /* M13ProgressViewFilteredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewFilteredImage.m; sourceTree = "<group>"; };
+		99A6571F2057A54A0015CA97 /* M13ProgressViewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewImage.h; sourceTree = "<group>"; };
+		99A657202057A54A0015CA97 /* M13ProgressViewImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewImage.m; sourceTree = "<group>"; };
+		99A657212057A54A0015CA97 /* M13ProgressViewLetterpress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewLetterpress.h; sourceTree = "<group>"; };
+		99A657222057A54A0015CA97 /* M13ProgressViewLetterpress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewLetterpress.m; sourceTree = "<group>"; };
+		99A657232057A54A0015CA97 /* M13ProgressViewMetroDotPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewMetroDotPolygon.h; sourceTree = "<group>"; };
+		99A657242057A54A0015CA97 /* M13ProgressViewMetroDotPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewMetroDotPolygon.m; sourceTree = "<group>"; };
+		99A657252057A54A0015CA97 /* M13ProgressViewPie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewPie.h; sourceTree = "<group>"; };
+		99A657262057A54A0015CA97 /* M13ProgressViewPie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewPie.m; sourceTree = "<group>"; };
+		99A657272057A54A0015CA97 /* M13ProgressViewRadiative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewRadiative.h; sourceTree = "<group>"; };
+		99A657282057A54A0015CA97 /* M13ProgressViewRadiative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewRadiative.m; sourceTree = "<group>"; };
+		99A657292057A54A0015CA97 /* M13ProgressViewRing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewRing.h; sourceTree = "<group>"; };
+		99A6572A2057A54A0015CA97 /* M13ProgressViewRing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewRing.m; sourceTree = "<group>"; };
+		99A6572B2057A54A0015CA97 /* M13ProgressViewSegmentedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewSegmentedBar.h; sourceTree = "<group>"; };
+		99A6572C2057A54A0015CA97 /* M13ProgressViewSegmentedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewSegmentedBar.m; sourceTree = "<group>"; };
+		99A6572D2057A54A0015CA97 /* M13ProgressViewSegmentedRing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewSegmentedRing.h; sourceTree = "<group>"; };
+		99A6572E2057A54A0015CA97 /* M13ProgressViewSegmentedRing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewSegmentedRing.m; sourceTree = "<group>"; };
+		99A6572F2057A54A0015CA97 /* M13ProgressViewStripedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewStripedBar.h; sourceTree = "<group>"; };
+		99A657302057A54A0015CA97 /* M13ProgressViewStripedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewStripedBar.m; sourceTree = "<group>"; };
+		99A657312057A54A0015CA97 /* M13PsrogressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13PsrogressView.h; sourceTree = "<group>"; };
+		99A657322057A54A0015CA97 /* M13PsrogressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13PsrogressView.m; sourceTree = "<group>"; };
+		99A657412057B4010015CA97 /* ProgressController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressController.h; sourceTree = "<group>"; };
+		99A657422057B4010015CA97 /* ProgressController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressController.m; sourceTree = "<group>"; };
+		99A657442057C3F90015CA97 /* CSSVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSVProgressHUD.m; sourceTree = "<group>"; };
+		99A657452057C3F90015CA97 /* CSSVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSVProgressHUD.h; sourceTree = "<group>"; };
+		99A657472058B4220015CA97 /* CSIAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSIAPManager.h; sourceTree = "<group>"; };
+		99A657482058B4220015CA97 /* CSIAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSIAPManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +410,7 @@
 		99008E5F201AD78E004264D2 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				99A657162057A54A0015CA97 /* ProgressViews */,
 				99008E62201AD9DF004264D2 /* AFNetworking */,
 				99008EC1201AD9E0004264D2 /* Base64 */,
 				99008EF4201AD9E0004264D2 /* CSMassonry */,
@@ -407,7 +420,6 @@
 				99008E96201AD9DF004264D2 /* IQKeyboardManager */,
 				99008E70201AD9DF004264D2 /* LRTextField */,
 				99008E83201AD9DF004264D2 /* NJKWebViewProgress */,
-				99008EC5201AD9E0004264D2 /* ProgressViews */,
 				99008EBB201AD9DF004264D2 /* Reachability */,
 				99008E73201AD9DF004264D2 /* SBJson */,
 				99008EE2201AD9E0004264D2 /* SCLAlertView */,
@@ -419,6 +431,8 @@
 		99008E60201AD7B3004264D2 /* Help */ = {
 			isa = PBXGroup;
 			children = (
+				99A657472058B4220015CA97 /* CSIAPManager.h */,
+				99A657482058B4220015CA97 /* CSIAPManager.m */,
 				99300FFC2043F0B600F7733E /* CSHttpRequest.h */,
 				99300FFB2043F0B600F7733E /* CSHttpRequest.m */,
 				99300FF82043EA1E00F7733E /* apiService.h */,
@@ -441,6 +455,7 @@
 		99008E61201AD7F1004264D2 /* Mjui */ = {
 			isa = PBXGroup;
 			children = (
+				99A657122057A5120015CA97 /* ProgressView */,
 				9964CF68202BF82D00D50549 /* views */,
 				99008F74201B5482004264D2 /* LoginViewController.h */,
 				99008F75201B5482004264D2 /* LoginViewController.m */,
@@ -648,41 +663,6 @@
 			path = Base64;
 			sourceTree = "<group>";
 		};
-		99008EC5201AD9E0004264D2 /* ProgressViews */ = {
-			isa = PBXGroup;
-			children = (
-				99008EC6201AD9E0004264D2 /* M13ProgressdViewMetro.h */,
-				99008EC7201AD9E0004264D2 /* M13ProgressdViewMetro.m */,
-				99008EC8201AD9E0004264D2 /* M13ProgressViewBar.h */,
-				99008EC9201AD9E0004264D2 /* M13ProgressViewBar.m */,
-				99008ECA201AD9E0004264D2 /* M13ProgressViewBorderedBar.h */,
-				99008ECB201AD9E0004264D2 /* M13ProgressViewBorderedBar.m */,
-				99008ECC201AD9E0004264D2 /* M13ProgressViewFilteredImage.h */,
-				99008ECD201AD9E0004264D2 /* M13ProgressViewFilteredImage.m */,
-				99008ECE201AD9E0004264D2 /* M13ProgressViewImage.h */,
-				99008ECF201AD9E0004264D2 /* M13ProgressViewImage.m */,
-				99008ED0201AD9E0004264D2 /* M13ProgressViewLetterpress.h */,
-				99008ED1201AD9E0004264D2 /* M13ProgressViewLetterpress.m */,
-				99008ED2201AD9E0004264D2 /* M13ProgressViewMetroDotPolygon.h */,
-				99008ED3201AD9E0004264D2 /* M13ProgressViewMetroDotPolygon.m */,
-				99008ED4201AD9E0004264D2 /* M13ProgressViewPie.h */,
-				99008ED5201AD9E0004264D2 /* M13ProgressViewPie.m */,
-				99008ED6201AD9E0004264D2 /* M13ProgressViewRadiative.h */,
-				99008ED7201AD9E0004264D2 /* M13ProgressViewRadiative.m */,
-				99008ED8201AD9E0004264D2 /* M13ProgressViewRing.h */,
-				99008ED9201AD9E0004264D2 /* M13ProgressViewRing.m */,
-				99008EDA201AD9E0004264D2 /* M13ProgressViewSegmentedBar.h */,
-				99008EDB201AD9E0004264D2 /* M13ProgressViewSegmentedBar.m */,
-				99008EDC201AD9E0004264D2 /* M13ProgressViewSegmentedRing.h */,
-				99008EDD201AD9E0004264D2 /* M13ProgressViewSegmentedRing.m */,
-				99008EDE201AD9E0004264D2 /* M13ProgressViewStripedBar.h */,
-				99008EDF201AD9E0004264D2 /* M13ProgressViewStripedBar.m */,
-				99008EE0201AD9E0004264D2 /* M13PsrogressView.h */,
-				99008EE1201AD9E0004264D2 /* M13PsrogressView.m */,
-			);
-			path = ProgressViews;
-			sourceTree = "<group>";
-		};
 		99008EE2201AD9E0004264D2 /* SCLAlertView */ = {
 			isa = PBXGroup;
 			children = (
@@ -784,6 +764,55 @@
 			path = views;
 			sourceTree = "<group>";
 		};
+		99A657122057A5120015CA97 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				99A657452057C3F90015CA97 /* CSSVProgressHUD.h */,
+				99A657442057C3F90015CA97 /* CSSVProgressHUD.m */,
+				99A657142057A52F0015CA97 /* CSGameProgressView.h */,
+				99A657132057A52F0015CA97 /* CSGameProgressView.m */,
+				99A657412057B4010015CA97 /* ProgressController.h */,
+				99A657422057B4010015CA97 /* ProgressController.m */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		99A657162057A54A0015CA97 /* ProgressViews */ = {
+			isa = PBXGroup;
+			children = (
+				99A657172057A54A0015CA97 /* M13ProgressdViewMetro.h */,
+				99A657182057A54A0015CA97 /* M13ProgressdViewMetro.m */,
+				99A657192057A54A0015CA97 /* M13ProgressViewBar.h */,
+				99A6571A2057A54A0015CA97 /* M13ProgressViewBar.m */,
+				99A6571B2057A54A0015CA97 /* M13ProgressViewBorderedBar.h */,
+				99A6571C2057A54A0015CA97 /* M13ProgressViewBorderedBar.m */,
+				99A6571D2057A54A0015CA97 /* M13ProgressViewFilteredImage.h */,
+				99A6571E2057A54A0015CA97 /* M13ProgressViewFilteredImage.m */,
+				99A6571F2057A54A0015CA97 /* M13ProgressViewImage.h */,
+				99A657202057A54A0015CA97 /* M13ProgressViewImage.m */,
+				99A657212057A54A0015CA97 /* M13ProgressViewLetterpress.h */,
+				99A657222057A54A0015CA97 /* M13ProgressViewLetterpress.m */,
+				99A657232057A54A0015CA97 /* M13ProgressViewMetroDotPolygon.h */,
+				99A657242057A54A0015CA97 /* M13ProgressViewMetroDotPolygon.m */,
+				99A657252057A54A0015CA97 /* M13ProgressViewPie.h */,
+				99A657262057A54A0015CA97 /* M13ProgressViewPie.m */,
+				99A657272057A54A0015CA97 /* M13ProgressViewRadiative.h */,
+				99A657282057A54A0015CA97 /* M13ProgressViewRadiative.m */,
+				99A657292057A54A0015CA97 /* M13ProgressViewRing.h */,
+				99A6572A2057A54A0015CA97 /* M13ProgressViewRing.m */,
+				99A6572B2057A54A0015CA97 /* M13ProgressViewSegmentedBar.h */,
+				99A6572C2057A54A0015CA97 /* M13ProgressViewSegmentedBar.m */,
+				99A6572D2057A54A0015CA97 /* M13ProgressViewSegmentedRing.h */,
+				99A6572E2057A54A0015CA97 /* M13ProgressViewSegmentedRing.m */,
+				99A6572F2057A54A0015CA97 /* M13ProgressViewStripedBar.h */,
+				99A657302057A54A0015CA97 /* M13ProgressViewStripedBar.m */,
+				99A657312057A54A0015CA97 /* M13PsrogressView.h */,
+				99A657322057A54A0015CA97 /* M13PsrogressView.m */,
+			);
+			name = ProgressViews;
+			path = ../../../PackageTheGenerator/CSGameMb/CSGameMb/ThirdParty/ProgressViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -861,77 +890,80 @@
 				99008F50201AD9E0004264D2 /* UIImage+ImageEffects.m in Sources */,
 				9964CF6B202BF86400D50549 /* ATypeView.m in Sources */,
 				99008F1D201AD9E0004264D2 /* CSSBJson4StreamWriterState.m in Sources */,
-				99008F3C201AD9E0004264D2 /* M13ProgressViewBar.m in Sources */,
 				99008F32201AD9E0004264D2 /* IQBarButtonItem.m in Sources */,
 				99008F51201AD9E0004264D2 /* MASCompositeConstraint.m in Sources */,
+				99A657492058B4230015CA97 /* CSIAPManager.m in Sources */,
 				99008F55201AD9E0004264D2 /* MASViewAttribute.m in Sources */,
+				99A657332057A54A0015CA97 /* M13ProgressdViewMetro.m in Sources */,
 				99008F38201AD9E0004264D2 /* CSReachability.m in Sources */,
+				99A657392057A54A0015CA97 /* M13ProgressViewMetroDotPolygon.m in Sources */,
 				99008F4B201AD9E0004264D2 /* SCLAlertViewStyleKit.m in Sources */,
 				9964CF71202BFCDD00D50549 /* BTypeView.m in Sources */,
-				99008F42201AD9E0004264D2 /* M13ProgressViewPie.m in Sources */,
 				99008E5A201AD677004264D2 /* ViewController.m in Sources */,
-				99008F40201AD9E0004264D2 /* M13ProgressViewLetterpress.m in Sources */,
 				9998DFA5204103DB0063F903 /* AgreementViewController.m in Sources */,
 				99008F18201AD9E0004264D2 /* CSAFURLSessionManager.m in Sources */,
 				99008F57201AD9E0004264D2 /* NSArray+MASAdditions.m in Sources */,
 				99008F49201AD9E0004264D2 /* SCLAlertsView.m in Sources */,
 				9964CF7A202BFD1400D50549 /* ETypeView.m in Sources */,
-				99008F46201AD9E0004264D2 /* M13ProgressViewSegmentedRing.m in Sources */,
+				99A6573E2057A54A0015CA97 /* M13ProgressViewSegmentedRing.m in Sources */,
+				99A6573F2057A54A0015CA97 /* M13ProgressViewStripedBar.m in Sources */,
+				99A6573C2057A54A0015CA97 /* M13ProgressViewRing.m in Sources */,
 				99008F19201AD9E0004264D2 /* CSLRTextField.m in Sources */,
+				99A657382057A54A0015CA97 /* M13ProgressViewLetterpress.m in Sources */,
 				99008F73201B423B004264D2 /* CSSSKeychainQuery.m in Sources */,
 				99008F23201AD9E0004264D2 /* UIColor+Hex.m in Sources */,
 				99300FFA2043EA1E00F7733E /* apiService.m in Sources */,
 				99008F4F201AD9E0004264D2 /* SCLTimerDisplay.m in Sources */,
+				99A657342057A54A0015CA97 /* M13ProgressViewBar.m in Sources */,
 				99008F3A201AD9E0004264D2 /* CSGTMBase64.m in Sources */,
 				99008F31201AD9E0004264D2 /* IQTextView.m in Sources */,
 				99008F5A201AD9E0004264D2 /* ViewController+MASAdditions.m in Sources */,
 				99008F6A201B3DCC004264D2 /* MJConfigModel.m in Sources */,
 				99008E59201AD677004264D2 /* AppDelegate.m in Sources */,
 				99008F33201AD9E0004264D2 /* IQPreviousNextView.m in Sources */,
+				99A657462057C3F90015CA97 /* CSSVProgressHUD.m in Sources */,
 				9964CF7D202BFD2700D50549 /* FTypeView.m in Sources */,
-				99008F3E201AD9E0004264D2 /* M13ProgressViewFilteredImage.m in Sources */,
 				9998DFA22040FFDA0063F903 /* RegiestViewController.m in Sources */,
-				99008F43201AD9E0004264D2 /* M13ProgressViewRadiative.m in Sources */,
 				99008F66201B1ED6004264D2 /* UIColor+Hex.m in Sources */,
 				9964CF74202BFCF700D50549 /* CTypeView.m in Sources */,
 				99008E4D201AD5FB004264D2 /* main.m in Sources */,
 				993010002044FA2100F7733E /* GameViewController.m in Sources */,
 				99008F63201B1ED0004264D2 /* CSColorManagement.m in Sources */,
 				99008F1F201AD9E0004264D2 /* CSSBJson4Writer.m in Sources */,
+				99A657352057A54A0015CA97 /* M13ProgressViewBorderedBar.m in Sources */,
 				99008F56201AD9E0004264D2 /* MASViewConstraint.m in Sources */,
+				99A657152057A52F0015CA97 /* CSGameProgressView.m in Sources */,
 				9964CF6E202BF89E00D50549 /* BaseTypeView.m in Sources */,
+				99A657372057A54A0015CA97 /* M13ProgressViewImage.m in Sources */,
 				99300FFD2043F0B600F7733E /* CSHttpRequest.m in Sources */,
 				99008E5E201AD767004264D2 /* WebBoxViewController.m in Sources */,
 				99008F28201AD9E0004264D2 /* SVRadialGradientLayer.m in Sources */,
 				99008F35201AD9E0004264D2 /* IQToolbar.m in Sources */,
-				99008F3D201AD9E0004264D2 /* M13ProgressViewBorderedBar.m in Sources */,
 				99008F54201AD9E0004264D2 /* MASLayoutConstraint.m in Sources */,
 				99008F2A201AD9E0004264D2 /* IQUIScrollView+Additions.m in Sources */,
 				99008F22201AD9E0004264D2 /* NJKTWebViewProgressView.m in Sources */,
-				99008F48201AD9E0004264D2 /* M13PsrogressView.m in Sources */,
 				99008F4C201AD9E0004264D2 /* SCLButton.m in Sources */,
 				99008F5C201AD9E0004264D2 /* CSDragButton.m in Sources */,
 				99008F4D201AD9E0004264D2 /* SCLSwitchView.m in Sources */,
 				99008F21201AD9E0004264D2 /* NJKSWesbViewProgress.m in Sources */,
-				99008F44201AD9E0004264D2 /* M13ProgressViewRing.m in Sources */,
 				99008F30201AD9E0004264D2 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				99008F14201AD9E0004264D2 /* CSAFNetworkReachabilityManager.m in Sources */,
 				99008F1E201AD9E0004264D2 /* CSSBJson4StsreamParser.m in Sources */,
-				99008F45201AD9E0004264D2 /* M13ProgressViewSegmentedBar.m in Sources */,
 				99008F2C201AD9E0004264D2 /* IQUIView+Hierarchy.m in Sources */,
 				99008F2D201AD9E0004264D2 /* IQUIViewController+Additions.m in Sources */,
+				99A6573D2057A54A0015CA97 /* M13ProgressViewSegmentedBar.m in Sources */,
 				99008F6D201B4064004264D2 /* MJUrlModel.m in Sources */,
 				99008F15201AD9E0004264D2 /* CSAFSecurityPolicy.m in Sources */,
 				99008F24201AD9E0004264D2 /* BWSVProgressHUD.m in Sources */,
 				99008F5B201AD9E0004264D2 /* CSCMPopTipView.m in Sources */,
 				99008F58201AD9E0004264D2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				99008F41201AD9E0004264D2 /* M13ProgressViewMetroDotPolygon.m in Sources */,
-				99008F47201AD9E0004264D2 /* M13ProgressViewStripedBar.m in Sources */,
 				99008F29201AD9E0004264D2 /* IQNSArray+Sort.m in Sources */,
+				99A657432057B4010015CA97 /* ProgressController.m in Sources */,
+				99A657402057A54A0015CA97 /* M13PsrogressView.m in Sources */,
+				99A657362057A54A0015CA97 /* M13ProgressViewFilteredImage.m in Sources */,
 				99008F2F201AD9E0004264D2 /* IQKeyboardManager.m in Sources */,
 				99008F4A201AD9E0004264D2 /* SCLAlertViewResponder.m in Sources */,
 				99008F70201B4222004264D2 /* CSGSKeyschains.m in Sources */,
-				99008F3B201AD9E0004264D2 /* M13ProgressdViewMetro.m in Sources */,
 				99008F2B201AD9E0004264D2 /* IQUITextFieldView+Additions.m in Sources */,
 				99008F59201AD9E0004264D2 /* View+MASAdditions.m in Sources */,
 				99008F1C201AD9E0004264D2 /* CSSBJson4StreamTokeniser.m in Sources */,
@@ -942,9 +974,10 @@
 				99008F39201AD9E0004264D2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				99008F1B201AD9E0004264D2 /* CSSBJson4StreamParserState.m in Sources */,
 				9964CF80202BFD3700D50549 /* GTypeView.m in Sources */,
+				99A6573B2057A54A0015CA97 /* M13ProgressViewRadiative.m in Sources */,
+				99A6573A2057A54A0015CA97 /* M13ProgressViewPie.m in Sources */,
 				99008F4E201AD9E0004264D2 /* SCLTextView.m in Sources */,
 				99008F52201AD9E0004264D2 /* MASConsstraint.m in Sources */,
-				99008F3F201AD9E0004264D2 /* M13ProgressViewImage.m in Sources */,
 				99008F34201AD9E0004264D2 /* IQTitleBarButtonItem.m in Sources */,
 				99008F17201AD9E0004264D2 /* CSAFURLResponseSerialization.m in Sources */,
 				9964CF77202BFD0700D50549 /* DTypeView.m in Sources */,

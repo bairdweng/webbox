@@ -220,8 +220,16 @@
         };
         self.context[@"native"] = self;
         for (NSString* function in _functions) {
-            self.context[function] = ^(id data) {
-                weakSelf.fcallBackDataBlock(function, data);
+            self.context[function] = ^(id data, id url) {
+                if(url){
+                    NSMutableDictionary *dictionary = [[NSMutableDictionary alloc]init];
+                    [dictionary setObject:data forKey:@"data"];
+                    [dictionary setObject:url forKey:@"url"];
+                    weakSelf.fcallBackDataBlock(function, dictionary);
+                }
+                else{
+                    weakSelf.fcallBackDataBlock(function, data);
+                }
             };
         }
     }

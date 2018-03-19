@@ -14,4 +14,6 @@ typedef void (^requestCallBack)(id dic);
 - (void)loginWithUserName:(NSString*)username withPassWord:(NSString*)password withblock:(requestCallBack)block;
 - (void)regiesterWithUserName:(NSString*)username withPassWord:(NSString*)password withblock:(requestCallBack)block;
 - (void)getGameInfoWithblock:(requestCallBack)block;
+- (void)getiapConfig:(requestCallBack)block;
+- (void)inPurchasingWithProductId:(NSString*)productId withExtraInfo:(NSString*)extraInfo withBlock:(requestCallBack)block;
 @end

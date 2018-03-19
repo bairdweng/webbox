@@ -41,11 +41,12 @@
     __weak typeof (typeView) weaktypeView = typeView;
     [typeView setLoginBlock:^(UIButton* button) {
         if (weaktypeView.userNametextField.text.length==0) {
-            [BWSVProgressHUD showErrorWithStatus:@"请输入您的用户名"];
+            [CSSVProgressHUD hx_showErrorWithStatus:@"请输入您的用户名"];
         } else if (weaktypeView.userNametextField.text.length < 6) {
-            [BWSVProgressHUD showErrorWithStatus:@"请输入6位数以上的密码"];
+            [CSSVProgressHUD hx_showErrorWithStatus:@"请输入6位数以上的密码"];
         }
         else{
+            [CSSVProgressHUD hx_showWithStatus:@"正在登录"];
             [[apiService shared] loginWithUserName:weaktypeView.userNametextField.text
                                       withPassWord:weaktypeView.passWordtextField.text
                                          withblock:^(id dic) {
@@ -55,12 +56,12 @@
                                                  if(status==0){
                                                      [[NSUserDefaults standardUserDefaults] setObject:weaktypeView.userNametextField.text forKey:@"userName"];
                                                      [[NSUserDefaults standardUserDefaults] setObject:weaktypeView.passWordtextField.text forKey:@"passWord"];
-                                                     [BWSVProgressHUD showSuccessWithStatus:@"登录成功"];
+                                                     [CSSVProgressHUD hx_showSuccessWithStatus:@"登录成功"];
                                                      GameViewController *gameViewControler = [[GameViewController alloc]init];
                                                      [weakSelf presentViewController:gameViewControler animated:NO completion:nil];
                                                  }
                                                  else{
-                                                     [BWSVProgressHUD showErrorWithStatus:msg];
+                                                     [CSSVProgressHUD hx_showErrorWithStatus:msg];
                                                  }
                                              }
                                          }];

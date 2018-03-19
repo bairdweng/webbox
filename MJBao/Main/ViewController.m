@@ -13,6 +13,8 @@
 #import "apiService.h"
 #import "MJConfigModel.h"
 #import "GameViewController.h"
+#import "M13ProgressViewPie.h"
+#import "ProgressController.h"
 @interface ViewController ()
 
 @end
@@ -34,15 +36,18 @@
             NSString* ext2 = dic[@"ext2"];//是否使用wk
             NSString* appid = dic[@"ext5"];//appid
             NSString* thumb = dic[@"thumb"]; //环境0是过审，1是发布。
+            ext2 = @"";
+            url = @"http://wvw.9377.com/h5/game_login.php?gid=616&sid=1";
+            thumb = @"0";
             [MJConfigModel shared].gameID = gameid;
             [MJConfigModel shared].loadURL = url;
             [MJConfigModel shared].appID = appid;
             [MJConfigModel shared].useWkWebView = [ext2 isEqualToString:@"wk"];
-            thumb = @"1";
             if([thumb intValue]==1){
                 [MJConfigModel shared].isPublish = YES;
                 GameViewController *gameViewController = [[GameViewController alloc]init];
-                [weakSelf presentViewController:gameViewController animated:nil completion:nil];
+                UINavigationController* navigation = [[UINavigationController alloc] initWithRootViewController:gameViewController];
+                [weakSelf presentViewController:navigation animated:nil completion:nil];
             }
             else{
                 [MJConfigModel shared].isPublish = false;
